@@ -1,7 +1,7 @@
-if exists("b:loaded_py_ftplugin_koevim")
+if exists("b:loaded_py_ftplugin_pier")
   finish
 endif
-let b:loaded_py_ftplugin_koevim = 1
+let b:loaded_py_ftplugin_pier = 1
 
 python << EOF
 import vim
@@ -11,7 +11,7 @@ import sys
 vimpath = os.path.expanduser(os.path.join("~", ".vim", "python"))
 sys.path.append(vimpath)
 
-from koevim import GenerateDocString
+from pier import GenerateDocString
 
 def SetBreakpoint():
     nLine = int( vim.eval( 'line(".")'))
