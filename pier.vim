@@ -8,8 +8,6 @@ import vim
 
 import os
 import sys
-vimpath = os.path.expanduser(os.path.join("~", ".vim", "python"))
-sys.path.append(vimpath)
 
 from pier import GenerateDocString
 
